@@ -1,0 +1,15 @@
+@charset "UTF-8";
+/*
+Color:  #09090A
+*/
+
+html, body{
+    background-color: #09090A;
+}
+
+body{
+    display: grid;
+    place-items: center;
+
+    height: 100vh;
+}
