@@ -45,14 +45,18 @@ button{
 
 form{
     display: flex;
+    padding: 0 48px;
 }
 
 .habits{
-    
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
 }
 
 .habit{
-    border: 1px solid red;
+    
     width: 64px;
     height: 64px;
     font-size: 32px;
