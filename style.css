@@ -1,15 +1,98 @@
 @charset "UTF-8";
 /*
-Color:  #09090A
+Color:   #09090A
+         #8b5cf8
+         #27272A
+         #18181B
+         #8B5CF6
+         #A78BFA
 */
 
-html, body{
-    background-color: #09090A;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body{
-    display: grid;
-    place-items: center;
-
+    background-color: #09090A;
+    color: white;
     height: 100vh;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 48px;
+}
+
+button{
+    padding: 16px 24px;
+    border-radius: 8px;
+    border: 1px solid #8b5cf8;
+    background-color: transparent;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 125%;
+}
+
+form{
+    display: flex;
+}
+
+.habits{
+    
+}
+
+.habit{
+    border: 1px solid red;
+    width: 64px;
+    height: 64px;
+    font-size: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.days{
+    display: flex;
+    gap: 48px;
+    margin-left: 32px;
+}
+
+.day{
+    display: flex;
+    gap: 24px;
+    flex-direction: column;
+}
+
+.day div{
+    margin-bottom: 8px;
+    font-size: 20px;
+    line-height: 125%;
+    color: #A1A1AA;
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+}
+
+input{
+    appearance: none;
+    -webkit-appearance: none;
+    width: 64px;
+    height: 64px;
+    border-radius: 2px solid #27272A;
+    border-radius: 8px;
+    background: #18181B;
+}
+
+input:checked{
+    background: #8B5CF6;
+    border: 2px solid #a78bfa;
 }
