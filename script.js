@@ -8,7 +8,7 @@ form.addEventListener("change", save)
 function add(){
     // para teste desativar esse
     const today = new Date().toLocaleDateString('pt-br').slice(0, -5)
-    //para testar colocar esse const today = "01/01"
+    // const today = "01/01" //para testar colocar esse
     const dayExists = nlwSetup.dayExists(today)
 
     if(dayExists){
